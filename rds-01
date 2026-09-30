@@ -1,0 +1,11 @@
+aws rds create-db-instance \
+  --db-instance-identifier login-db \
+  --db-instance-class db.t3.micro \
+  --engine mysql \
+  --engine-version 8.0 \
+  --master-username admin \
+  --master-user-password 'YourPassword123!' \
+  --allocated-storage 20 \
+  --publicly-accessible \
+  --backup-retention-period 7 \
+  --region ap-south-1
